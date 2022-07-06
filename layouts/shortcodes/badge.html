@@ -1,5 +1,5 @@
 {{/* Requires "layouts/partials/button.html" */}}
-{{/* Source: https://github.com/marketempower/axiom/blob/master/layouts/shortcodes/button.html */}}
+{{/* Source: https://gitlab.com/Roneo/hugo-shortcode-roneo-button-icon-badge */}}
 
 {{- $text := "" -}}
 {{- $theme := "" -}}
@@ -23,7 +23,7 @@
 {{- $id = .Get 5 -}}
 {{- end }}
 {{- if not $text }}
-{{- errorf "Missing required 'text'. Shortcode: 'button'." -}}
+{{- errorf "Missing required 'text'. Shortcode: 'badge'." -}}
 {{- end }}
-{{/* Calls "layouts/partials/button.html" */}}
-{{- partial "button" (dict "Site" $.Site "Page" . "text" $text "theme" $theme "icon" $icon "class" $class  "href" $href "id" $id) -}}
+{{/* Calls "layouts/partials/badge.html" */}}
+{{- partial "badge" (dict "Site" $.Site "Page" . "text" $text "theme" $theme "icon" $icon "class" $class  "href" $href "id" $id) -}}

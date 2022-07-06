@@ -13,7 +13,7 @@ Both a [Shortcode](https://gohugo.io/content-management/shortcodes/) and a [Part
 ## Usage
 
 ```
-{{< button text="CSS" icon="css" >}}
+{{< badge text="CSS" icon="css" >}}
 ```
 
 ## Options
@@ -50,19 +50,19 @@ To learn more about "Theme components", see [the Hugo documentation](https://goh
 with the following Shortcode
 
 ```go
-{{< button text="CSS" >}}
+{{< badge text="CSS" >}}
 ```
 
 with an icon
 
 ```go
-{{< button text="CSS" icon="css" >}}
+{{< badge text="CSS" icon="css" >}}
 ```
 
 ### Call from a template
 
 ```go
-{{ partial "button.html" (dict "context" . "pages" $.Site.Pages "text" "Hi there" "icon" "git") }}
+{{ partial "badge.html" (dict "context" . "pages" $.Site.Pages "text" "Hi there" "icon" "git") }}
 ```
 
 ### Add more icons
@@ -76,7 +76,7 @@ Note that some SVG files do not work (#TODO:investigate), see `/layouts/partials
 
 Please star this repo [on Github](https://github.com/RoneoOrg/hugo-shortcode-roneo-button-icon-badge) or [Gitlab](https://gitlab.com/Roneo/hugo-shortcode-roneo-button-icon-badge), to help this project gain some visibility and reach new contributors.
 
-Code contributions are welcome, and the main place for development is [this Gitlab repo](https://gitlab.com/Roneo/hugo-shortcode-roneo-button-icon-badge).
+Code contributions are welcome, and the main place for development is [this Gitlab repo](https://gitlab.com/Roneo/hugo-shortcode-roneo-button-icon-badge). Feel free to use [this Github repo](https://github.com/RoneoOrg/hugo-shortcode-roneo-button-icon-badge).
 
 ## References
 
