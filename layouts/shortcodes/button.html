@@ -1,4 +1,4 @@
-{{/* Requires the "button.html" partial */}}
+{{/* Requires "layouts/partials/button.html" */}}
 {{/* Source: https://github.com/marketempower/axiom/blob/master/layouts/shortcodes/button.html */}}
 
 {{- $text := "" -}}
@@ -25,5 +25,5 @@
 {{- if not $text }}
 {{- errorf "Missing required 'text'. Shortcode: 'button'." -}}
 {{- end }}
-{{/* Call "layouts/partials/button.html" */}}
+{{/* Calls "layouts/partials/button.html" */}}
 {{- partial "button" (dict "Site" $.Site "Page" . "text" $text "theme" $theme "icon" $icon "class" $class  "href" $href "id" $id) -}}
