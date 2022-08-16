@@ -41,6 +41,7 @@ Requires **Hugo > 0.42**
 Edit `config.toml`
 
     theme = ["hugo-shortcode-roneo-button-icon-badge", "YourCurrentTheme"]
+    enableInlineShortcodes = true
 
 To learn more about "Theme components", see [the Hugo documentation](https://gohugo.io/hugo-modules/theme-components/)
 
