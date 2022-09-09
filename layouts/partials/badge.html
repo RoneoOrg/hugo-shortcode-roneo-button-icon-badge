@@ -67,7 +67,7 @@
 
 {{- if $href }}
 
-  <a{{ with $id }} id="{{ . }}"{{ end }} class="badge {{ $classTheme }}{{ with $class }}{{ . }}{{ end }}" href="{{ $href }}" role="button">
+  <a{{ with $id }} id="{{ . }}"{{ end }} aria-label="{{ $text | safeHTML }}" class="badge {{ $classTheme }}{{ with $class }}{{ . }}{{ end }}" href="{{ $href }}" role="button">
     {{- with $svg }}
     <span aria-hidden="true">{{ . | safeHTML }}</span>
     {{- end }}
@@ -76,7 +76,7 @@
 
 {{- else }}
 
-  <span class="badge {{ $classTheme }}{{ with $class }}{{ . }}{{ end }}">
+  <span aria-label="{{ $text | safeHTML }}" class="badge {{ $classTheme }}{{ with $class }}{{ . }}{{ end }}">
     {{- with $svg }}
     <span aria-hidden="true">{{ . | safeHTML }}</span>
     {{- end }}
