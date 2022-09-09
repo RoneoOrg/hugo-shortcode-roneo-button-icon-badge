@@ -69,7 +69,7 @@
 
   <a{{ with $id }} id="{{ . }}"{{ end }} class="badge {{ $classTheme }}{{ with $class }}{{ . }}{{ end }}" href="{{ $href }}" role="button">
     {{- with $svg }}
-    {{ . | safeHTML }}
+    <span aria-hidden="true">{{ . | safeHTML }}</span>
     {{- end }}
     <span>{{ $text | safeHTML }}</span>
   </a>
@@ -78,7 +78,7 @@
 
   <span class="badge {{ $classTheme }}{{ with $class }}{{ . }}{{ end }}">
     {{- with $svg }}
-    {{ . | safeHTML }}
+    <span aria-hidden="true">{{ . | safeHTML }}</span>
     {{- end }}
     <span>{{ $text | safeHTML }}</span>
   </span>
