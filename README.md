@@ -2,7 +2,7 @@
 
 ## Objective
 
-This Hugo Theme Component allows to easily **insert fancy Badges and Buttons in your content and templates**
+This Hugo Theme Component allows to easily **insert Badges and Buttons in your content and templates**
 
 Both a [Shortcode](https://gohugo.io/content-management/shortcodes/) and a [Partial Template](https://gohugo.io/templates/partials/) are provided.
 
@@ -34,11 +34,13 @@ You can add more files by creating the same directory structure in project root.
 
 ## Installation
 
-Requires **Hugo > 0.42**
+(Requires Hugo > 0.42)
+
+Install as a Git submodule:
 
     git submodule add https://gitlab.com/roneo.org/hugo-shortcode-roneo-button-icon-badge.git themes/hugo-shortcode-roneo-button-icon-badge
 
-Edit `config.toml`
+Edit `config.toml`:
 
     theme = ["hugo-shortcode-roneo-button-icon-badge", "YourCurrentTheme"]
     enableInlineShortcodes = true
@@ -46,15 +48,15 @@ Edit `config.toml`
 To learn more about "Theme components", see [the Hugo documentation](https://gohugo.io/hugo-modules/theme-components/)
 
 
-### Call from a Markdown file
+### Insert in a Markdown file
 
-with the following Shortcode
+with the following Shortcode:
 
 ```go
 {{< badge text="CSS" >}}
 ```
 
-with an icon
+Insert a badge with an icon:
 
 ```go
 {{< badge text="CSS" icon="css" >}}
