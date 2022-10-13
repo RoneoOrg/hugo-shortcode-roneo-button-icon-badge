@@ -70,10 +70,10 @@ Insert a badge with an icon:
 
 ### Add more icons
 
-Add SVG files in `/layouts/partials/svg/`.  
+Add SVG files in `/assets/svg/`.  
 You can edit the Component directory or create the same folder structure at the root of your project.
 
-Note that some SVG files do not work (#TODO:investigate), see `/layouts/partials/svg/` to get inspiration.
+Note that some SVG files do not work (#TODO:investigate), see `/assets/svg/` to get inspiration.
 
 ## Roadmap
 
