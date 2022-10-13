@@ -75,9 +75,6 @@ You can edit the Component directory or create the same folder structure at the 
 
 Note that some SVG files do not work (#TODO:investigate), see `/assets/svg/` to get inspiration.
 
-## Roadmap
-
-- load CSS only at first call
 
 ## Contribute
 
