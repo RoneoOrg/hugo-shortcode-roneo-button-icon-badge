@@ -75,6 +75,10 @@ You can edit the Component directory or create the same folder structure at the 
 
 Note that some SVG files do not work (#TODO:investigate), see `/layouts/partials/svg/` to get inspiration.
 
+## Roadmap
+
+- load CSS only at first call
+
 ## Contribute
 
 Please star this repo [on Github](https://github.com/RoneoOrg/hugo-shortcode-roneo-button-icon-badge) or [Gitlab](https://gitlab.com/Roneo/hugo-shortcode-roneo-button-icon-badge), to help this project gain some visibility and reach new contributors.
