@@ -33,7 +33,7 @@
 
 {{- if $href }}
 
-  <a{{ with $id }} id="{{ . }}"{{ end }} aria-label="{{ $text | safeHTML }}" class="badge badge-button {{ $classTheme }}{{ with $class }}{{ . }}{{ end }}" href="{{ $href }}" role="button">
+  <a{{ with $id }} id="{{ . }}"{{ end }} aria-label="{{ $text | safeHTML }}" class="badge badge-button {{ $classTheme }}{{ with $class }}{{ . }}{{ end }}" href="{{ $href }}" target="_blank" role="button">
     {{- with $svg }}
     <span aria-hidden="true">{{ . | safeHTML }}</span>
     {{- end }}
