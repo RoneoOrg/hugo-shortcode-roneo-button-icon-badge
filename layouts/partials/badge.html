@@ -14,8 +14,8 @@
 
 {{- with .icon }}
     {{- $svg = printf "svg/%s.svg" . -}}
-    {{- $svg = partial $svg (dict "classTheme" "fill-current h-4 w-auto mr-2") -}}
-    {{- $classTheme =  "inline-flex items-center " -}}
+    {{- $svg = partial $svg (dict "classTheme" "") -}}
+    {{- $classTheme =  "" -}}
 {{- end }}
 
 {{- $dot := . -}}
@@ -33,7 +33,7 @@
 
 {{- if $href }}
 
-  <a{{ with $id }} id="{{ . }}"{{ end }} aria-label="{{ $text | safeHTML }}" class="badge {{ $classTheme }}{{ with $class }}{{ . }}{{ end }}" href="{{ $href }}" role="button">
+  <a{{ with $id }} id="{{ . }}"{{ end }} aria-label="{{ $text | safeHTML }}" class="badge badge-button {{ $classTheme }}{{ with $class }}{{ . }}{{ end }}" href="{{ $href }}" role="button">
     {{- with $svg }}
     <span aria-hidden="true">{{ . | safeHTML }}</span>
     {{- end }}
